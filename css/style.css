@@ -2,9 +2,65 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* background colors */
+
+.bg-seagreen {
+  background-color: #5cbd9d;
+}
+
+.bg-orange {
+  background-color: #e67f31;
+}
+
+.bg-blue {
+  background-color: #3998db;
+}
+
+.bg-green {
+  background-color: #68cd73;
+}
+
+/* formatting classes */
+
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
 }
 
 /* header */
@@ -13,11 +69,8 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../media/banner.jpg");
   padding: 2em;
-  height: 100vh;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100vh;
 }
 
 nav {
@@ -41,7 +94,6 @@ nav .navigation-links {
 
 nav .company-name,
 header h1,
-header .subtitle,
 .navigation-links li {
   text-transform: uppercase;
 }
@@ -69,20 +121,12 @@ header .main-lockup {
 
 header h1 {
   color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  display: inline-block;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 5px;
   text-align: center;
+  border-bottom-color: #fff;
 }
 
 header .subtitle {
   color: #fff;
-  font-weight: 500;
-  font-size: 1.15rem;
-  margin: 1em 0;
-  text-align: center;
 }
 
 .header-btn {
@@ -92,4 +136,37 @@ header .subtitle {
   padding: 1em 1.5em;
   margin: 1em 0;
   border-radius: 0.25em;
+}
+
+/* services section */
+
+.services-section {
+  margin: 6rem 0;
+}
+
+.services-section .container {
+  align-items: center;
+}
+
+.services-section h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-section .subtitle {
+  color: #6f6f6f;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 3.5em 0;
+}
+
+.services-col {
+  width: 22%;
+  height: 300px;
+  color: #fff;
+  font-size: 2.5rem;
 }
